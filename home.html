@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>home</title>
-  <link rel="stylesheet" href="./styles/style.scss">
   <!-- font awesome cdn link -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./js/script.js" defer></script>
 
 </head>
 
@@ -21,7 +23,7 @@
   <!-- Header - START -->
 
   <header class="header">
-    <a href="home.html">LOGO</a>
+    <a href="home.html" class="logo">LOGO</a>
     <nav class="navbar">
       <ul>
         <li><a href="home.html">home</a></li>
@@ -44,14 +46,66 @@
 
     <div class="icons">
       <div id="menu-btn" class="fa-solid fa-bars"></div>
-      <div id="serch-btn" class="fa-solid fa-magnifying-glass"></div>
+      <div id="search-btn" class="fa-solid fa-magnifying-glass"></div>
       <a href="cart.html" class="fa-solid fa-cart-shopping"></a>
     </div>
+
+    <form action="" class="search-form">
+      <input type="search" name="" id="search-box" placeholder="Search...">
+      <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+    </form>
+
   </header>
 
   <!-- Header - END -->
 
-  <script src="./js/script.js"></script>
+
+
+  <!-- Footer - START -->
+
+  <section class="footer">
+
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick Link</h3>
+        <a href="home.html"><i class="fa-solid fa-angle-right"></i> home</a>
+        <a href="products.html"><i class="fa-solid fa-angle-right"></i> products</a>
+        <a href="about.html"><i class="fa-solid fa-angle-right"></i> about</a>
+        <a href="blogs.html"><i class="fa-solid fa-angle-right"></i> blogs</a>
+        <a href="contact.html"><i class="fa-solid fa-angle-right"></i> contact</a>
+        <a href="login.html"><i class="fa-solid fa-angle-right"></i> login</a>
+        <a href="register.html"><i class="fa-solid fa-angle-right"></i> register</a>
+        <a href="cart.html"><i class="fa-solid fa-angle-right"></i> cart</a>
+      </div>
+
+      <div class="box">
+        <h3>Extra Link</h3>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> my account</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> my order</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> my wishlist</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> terms of use</a>
+        <a href="#"><i class="fa-solid fa-angle-right"></i> privacy policy</a>
+      </div>
+
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fa-brands fa-pinterest-p"></i> Pinterest</a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+        <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+
+      <!-- https://www.youtube.com/watch?v=dElWPv78or8   36:08 -->
+
+    </div>
+
+
+
+  </section>
+
+  <!-- Footer - END -->
 </body>
 
 </html>
