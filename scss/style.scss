@@ -29,6 +29,27 @@ html {
 	overflow-x: hidden;
 }
 
+section {
+	padding: 2rem 9%;
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 1rem;
+	padding: 0.8rem 2.8rem;
+	font-size: 1.7rem;
+	color: $black;
+	border: $border;
+	background: none;
+	cursor: pointer;
+	border-radius: 0.5rem;
+
+	&:hover {
+		background-color: $black;
+		color: $white;
+	}
+}
+
 .header {
 	position: sticky;
 	top: 0;
@@ -138,6 +159,73 @@ html {
 #menu-btn {
 	display: none;
 }
+
+// Footer - START
+
+.footer {
+	.box-container {
+		@include grid(25rem);
+
+		.box {
+			h3 {
+				font-size: 2.2rem;
+				color: $black;
+				padding: 1rem 0;
+			}
+
+			a {
+				display: block;
+				font-size: 1.4rem;
+				color: $light-color;
+				padding: 1rem 0;
+
+				&:hover {
+					color: $pink;
+
+					i {
+						padding-right: 2rem;
+					}
+				}
+
+				i {
+					color: $pink;
+					padding-right: 0.5rem;
+				}
+			}
+
+			p {
+				font-size: 1.5rem;
+				color: $light-color;
+				margin-bottom: 1rem;
+			}
+
+			form input[type="email"] {
+				width: 100%;
+				padding: 1rem 1.2rem;
+				border-radius: 0.5rem;
+				background-color: $light-bg;
+				font-size: 1.6rem;
+				text-transform: none;
+				margin: 0.5rem 0;
+			}
+		}
+	}
+	.credit {
+		text-align: center;
+		padding: 1rem;
+		padding-top: 2.5rem;
+		margin-top: 2.5rem;
+		font-size: 2rem;
+		color: $light-color;
+		border-top: $border;
+
+		span {
+			color: $pink;
+		}
+	}
+}
+
+// Footer - END
 
 // media-queries
 
