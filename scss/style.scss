@@ -164,10 +164,22 @@ section {
 
 // Home section - START
 
+.home {
+	padding: 0;
+	position: relative;
 
+	span {
+		color: red;
+	}
+
+	.slide {
+		display: flex;
+		min-height: 70vh;
+		padding: 2rem 7%;
+	}
+}
 
 // Home section - END
-
 
 // Footer - START
 
