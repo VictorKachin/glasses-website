@@ -250,6 +250,57 @@ section {
   right: 10rem;
 }
 
+.banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+}
+
+.banner .box {
+  position: relative;
+  height: 30rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.banner .box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.banner .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner .content {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.banner .content span {
+  font-size: 1.5rem;
+  color: .banner .content span #333;
+}
+
+.banner .content h3 {
+  font-size: 2rem;
+  color: .banner .content h3 #333;
+  padding-top: 1rem;
+}
+
+.banner .content .btn {
+  padding: 0.6rem 2rem;
+  font-size: 1.5rem;
+}
+
 .footer .box-container {
   display: -ms-grid;
   display: grid;
@@ -358,6 +409,9 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .home .slide .content h3 {
+    font-size: 4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -240,6 +240,54 @@ section {
 
 // Home section - END
 
+//  BANNER Section STARTS
+
+.banner {
+	@include grid(31rem);
+
+	.box {
+		position: relative;
+		height: 30rem;
+		overflow: hidden;
+		border-radius: 0.5rem;
+
+		&:hover img {
+			transform: scale(1.1);
+		}
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.content {
+		position: absolute;
+		top: 50%;
+		right: 2rem;
+		transform: translateY(-50%);
+
+		span {
+			font-size: 1.5rem;
+			color: &$black;
+		}
+
+		h3 {
+			font-size: 2rem;
+			color: &$black;
+			padding-top: 1rem;
+		}
+
+		.btn {
+			padding: 0.6rem 2rem;
+			font-size: 1.5rem;
+		}
+	}
+}
+
+//  BANNER Section ENDS
+
 // Footer - START
 
 .footer {
@@ -358,5 +406,9 @@ section {
 @media (max-width: 450px) {
 	html {
 		font-size: 50%;
+	}
+
+	.home .slide .content h3 {
+		font-size: 4rem;
 	}
 }
