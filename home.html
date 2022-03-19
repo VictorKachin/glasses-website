@@ -61,10 +61,9 @@
 
   <!-- HOME section - START - -->
 
-  <div class="home">
-    <span>nsnsnsnns</span>
+  <section class="home">
 
-    <div class="slide" style="background-image: url(./images/home-bg-1.png);">
+    <div class="slide active" style="background: url(./images/home-bg-1.png)  no-repeat;">
       <div class="content">
         <span>Protect you eyes!</span>
         <h3>upto 50% off</h3>
@@ -72,7 +71,7 @@
       </div>
     </div>
 
-    <div class="slide" style="background-image: url(./images/home-bg-2.png);">
+    <div class="slide" style="background: url(./images/home-bg-2.png) no-repeat;">
       <div class="content">
         <span>Protect you eyes!</span>
         <h3>upto 50% off</h3>
@@ -80,7 +79,7 @@
       </div>
     </div>
 
-    <div class="slide" style="background-image: url(./images/home-bg-3.png);">
+    <div class="slide" style="background: url(./images/home-bg-3.png) no-repeat;">
       <div class="content">
         <span>Protect you eyes!</span>
         <h3>upto 50% off</h3>
@@ -88,7 +87,10 @@
       </div>
     </div>
 
-  </div>
+    <div id="next-slide" onclick="next()" class="fa-solid fa-angle-right"></div>
+    <div id="prev-slide" onclick="prev()" class="fa-solid fa-angle-left"></div>
+
+  </section>
 
   <!-- HOME section - END- -->
 
