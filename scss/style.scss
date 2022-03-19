@@ -35,6 +35,39 @@ section {
 	padding: 2rem 9%;
 }
 
+.heading {
+	text-align: center;
+	background: $pink;
+
+	h1 {
+		font-size: 3rem;
+		text-transform: uppercase;
+		color: $white;
+	}
+
+	p {
+		color: $white;
+		padding-top: 0.7rem;
+		font-size: 1.7rem;
+
+		a {
+			color: $white;
+
+			&:hover {
+				color: $black;
+			}
+		}
+	}
+}
+
+.title {
+	font-size: 3rem;
+	color: $black;
+	margin-bottom: 2rem;
+	text-align: center;
+	padding: 1rem;
+}
+
 .btn {
 	display: inline-block;
 	margin-top: 1rem;
@@ -286,7 +319,111 @@ section {
 	}
 }
 
+.products .box-container {
+	@include grid(32rem);
+
+	.box {
+		border-radius: 0.5rem;
+		text-align: center;
+		border: $border;
+
+		&:hover .image .icons {
+			transform: translateY(0);
+		}
+
+		.image {
+			border-radius: 0.5rem;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			height: 25rem;
+
+			.icons {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				border-bottom: $border;
+				transform: translateY(-7rem);
+
+				a {
+					font-size: 2rem;
+					color: $black;
+					width: 5rem;
+					height: 5rem;
+					line-height: 5rem;
+
+					&:hover {
+						background: $black;
+						color: $white;
+					}
+				}
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.content {
+			padding: 1.5rem 0;
+
+			h3 {
+				font-size: 2rem;
+				color: $black;
+			}
+
+			.stars {
+				padding: 1rem 0;
+
+				i {
+					font-size: 1.4rem;
+					color: $pink;
+				}
+			}
+			.price {
+				font-size: 2.2rem;
+				color: $black;
+
+				span {
+					font-size: 1.2rem;
+					text-decoration: line-through;
+					color: $light-color;
+				}
+			}
+		}
+	}
+}
+
 //  BANNER Section ENDS
+
+// ABOUT section - STARTS
+
+.about {
+	.row {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+
+		.image {
+			flex: 1 1 42rem;
+
+			img {
+				width: 100%;
+				border-radius: 0.5rem;
+			}
+		}
+
+		.content {
+			flex: 1 1 42rem;
+		}
+	}
+}
+
+// ABOUT section - ENDS
 
 // Footer - START
 
