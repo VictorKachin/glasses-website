@@ -419,6 +419,52 @@ section {
 
 		.content {
 			flex: 1 1 42rem;
+
+			h3 {
+				color: $black;
+				font-size: 3.5rem;
+				line-height: 2;
+			}
+			p {
+				color: $light-color;
+				font-size: 1.4rem;
+				line-height: 2.5;
+				padding: 1rem 0;
+			}
+		}
+	}
+	.icons-container {
+		@include grid(16rem);
+		margin-top: 2.5rem;
+
+		.icons {
+			padding: 3rem 2rem;
+			border-radius: 0.5rem;
+			border: $border;
+			text-align: center;
+			cursor: pointer;
+
+			&:hover {
+				background: $black;
+
+				img {
+					filter: invert(1);
+				}
+
+				h3 {
+					color: $white;
+				}
+			}
+
+			img {
+				height: 7rem;
+				margin-bottom: 1rem;
+			}
+
+			h3 {
+				font-size: 1.7rem;
+				color: $black;
+			}
 		}
 	}
 }
