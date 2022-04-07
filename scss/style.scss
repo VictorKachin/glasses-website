@@ -587,7 +587,7 @@ section {
 .register-form {
 	form {
 		margin: 1rem auto;
-		max-width: 40rem;
+		max-width: 45rem;
 		border-radius: 0.5rem;
 		border: $border;
 		padding: 2rem;
@@ -663,12 +663,12 @@ section {
 			padding: 0.8rem 12rem;
 		}
 
-		.logRegBtn {
-			&:hover {
-				color: yellow;
-				border-color: $pink;
-			}
-		}
+		//.logRegBtn {
+		//	&:hover {
+		//		color: yellow;
+		//		border-color: $pink;
+		//	}
+		//}
 	}
 }
 
