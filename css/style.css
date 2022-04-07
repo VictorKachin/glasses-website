@@ -262,13 +262,13 @@ section {
   bottom: 2rem;
   right: 2rem;
   width: 6rem;
-  height: 6re;
+  height: 6rem;
   line-height: 5.5rem;
   font-size: 4rem;
   color: #333;
   border: 0.2rem solid #333;
   background: #fff;
-  border-radius: 0.5 rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   text-align: center;
 }
@@ -625,7 +625,7 @@ section {
 .login-form form,
 .register-form form {
   margin: 1rem auto;
-  max-width: 40rem;
+  max-width: 50rem;
   border-radius: 0.5rem;
   border: 0.2rem solid #333;
   padding: 2rem;
@@ -636,7 +636,7 @@ section {
 .register-form form h3 {
   font-size: 2.2rem;
   text-transform: uppercase;
-  color: #333;
+  color: red;
   margin-bottom: 0.7rem;
 }
 
@@ -718,7 +718,7 @@ section {
 .login-form form .btn,
 .register-form form .btn {
   width: 100%;
-  padding: 0.8rem 0;
+  padding: 0.8rem 12rem;
 }
 
 .footer .box-container {
@@ -773,8 +773,7 @@ section {
 
 .footer .credit {
   text-align: center;
-  padding: 1rem;
-  padding-top: 2.5rem;
+  padding: 2.5rem 1rem 1rem;
   margin-top: 2.5rem;
   font-size: 2rem;
   color: #666;
