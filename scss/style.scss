@@ -250,13 +250,13 @@ section {
 		bottom: 2rem;
 		right: 2rem;
 		width: 6rem;
-		height: 6re;
+		height: 6rem;
 		line-height: 5.5rem;
 		font-size: 4rem;
 		color: $black;
 		border: $border;
 		background: $white;
-		border-radius: 0.5 rem;
+		border-radius: 0.5rem;
 		cursor: pointer;
 		text-align: center;
 
@@ -719,8 +719,7 @@ section {
 	}
 	.credit {
 		text-align: center;
-		padding: 1rem;
-		padding-top: 2.5rem;
+		padding: 2.5rem 1rem 1rem;
 		margin-top: 2.5rem;
 		font-size: 2rem;
 		color: $light-color;
