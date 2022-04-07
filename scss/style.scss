@@ -660,7 +660,14 @@ section {
 
 		.btn {
 			width: 100%;
-			padding: 0.8rem 0;
+			padding: 0.8rem 12rem;
+		}
+
+		.logRegBtn {
+			&:hover {
+				color: yellow;
+				border-color: $pink;
+			}
 		}
 	}
 }

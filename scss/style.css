@@ -451,7 +451,11 @@ section {
   .login-form form .btn,
   .register-form form .btn {
     width: 100%;
-    padding: 0.8rem 0; }
+    padding: 0.8rem 12rem; }
+  .login-form form .logRegBtn:hover,
+  .register-form form .logRegBtn:hover {
+    color: yellow;
+    border-color: #e84393; }
 
 .footer .box-container {
   display: grid;
