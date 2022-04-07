@@ -65,7 +65,7 @@ section {
 	color: $black;
 	margin-bottom: 2rem;
 	text-align: center;
-	padding: 1rem;
+	padding: 0 1rem;
 }
 
 .btn {
@@ -303,12 +303,12 @@ section {
 
 		span {
 			font-size: 1.5rem;
-			color: &$black;
+			color: $black;
 		}
 
 		h3 {
 			font-size: 2rem;
-			color: &$black;
+			color: $black;
 			padding-top: 1rem;
 		}
 
@@ -542,7 +542,131 @@ section {
 
 // BLOG section - ENDS
 
-// Footer - START
+// CONTACT section - STARTS
+.contact {
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+
+		form {
+			flex: 1 1 42rem;
+			padding: 2rem;
+			border-radius: 0.5rem;
+			border: $border;
+
+			.box,
+			textarea {
+				width: 100%;
+				border-bottom: $border;
+				margin-bottom: 1rem;
+				padding: 1rem 0;
+				font-size: 1.6rem;
+				color: $light-color;
+				text-transform: none;
+			}
+
+			textarea {
+				height: 15rem;
+				resize: none;
+			}
+		}
+
+		.map {
+			width: 100%;
+			flex: 1 1 42rem;
+			border-radius: 0.5rem;
+		}
+	}
+}
+
+// CONTACT section - ENDS
+
+// LOGIN & REGISTER sections - STARTS
+.login-form,
+.register-form {
+	form {
+		margin: 1rem auto;
+		max-width: 40rem;
+		border-radius: 0.5rem;
+		border: $border;
+		padding: 2rem;
+		text-align: center;
+
+		h3 {
+			font-size: 2.2rem;
+			text-transform: uppercase;
+			color: $black;
+			margin-bottom: 0.7rem;
+		}
+
+		.inputBox {
+			margin: 1rem 0;
+			display: flex;
+			border-radius: 0.5rem;
+			background: $light-bg;
+			padding: 0.5rem 1rem;
+			align-items: center;
+			gap: 1rem;
+
+			span {
+				color: $light-color;
+				margin-left: 1rem;
+				font-size: 2rem;
+			}
+
+			input {
+				width: 100%;
+				padding: 1rem;
+				background: none;
+				font-size: 1.5rem;
+				color: $light-color;
+				text-transform: none;
+			}
+		}
+
+		.flex {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			padding: 1rem 0;
+			margin-top: 1rem;
+
+			label {
+				font-size: 1.5rem;
+				cursor: pointer;
+				color: $light-color;
+			}
+
+			a {
+				font-size: 1.5rem;
+				color: $light-color;
+				margin-left: auto;
+
+				&:hover {
+					color: $pink;
+				}
+			}
+		}
+
+		input[type="submit"] {
+			background: $black;
+			color: $white;
+
+			&:hover {
+				background: $pink;
+			}
+		}
+
+		.btn {
+			width: 100%;
+		}
+	}
+}
+
+// LOGIN & REGISTER sections - ENDS
+
+// Footer - STARTS
 
 .footer {
 	.box-container {
