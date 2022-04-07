@@ -674,6 +674,105 @@ section {
 
 // LOGIN & REGISTER sections - ENDS
 
+
+// CART section - STARTS
+
+.shopping-cart {
+
+	.box-container {
+		@include grid(32rem);
+		margin-bottom: 2rem;
+
+		.box {
+			border-radius: 0.5rem;
+			border: $border;
+			padding: 3rem 2rem;
+			position: relative;
+			display: flex;
+			align-items: center;
+			gap: 1.5rem;
+
+			.fa-times {
+				position: absolute;
+				top: 1rem;
+				right: 1.5rem;
+				font-size: 2.5rem;
+				cursor: pointer;
+				color: $light-color;
+
+				&:hover {
+					color: $pink;
+				}
+			}
+
+			img {
+				height: 10rem;
+			}
+
+			.content {
+				h3 {
+					font-size: 1.7rem;
+					padding-bottom: 0.5rem;
+					color: $black;
+				}
+
+				form {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+					padding: 1rem 0;
+
+					span {
+						color: $light-color;
+						font-size: 1.5rem;
+					}
+
+					input {
+						width: 8rem;
+						color: $light-color;
+						font-size: 1.5rem;
+						padding: 0.5rem 1rem;
+						border-radius: 0.5rem;
+						background-color: $light-bg;
+					}
+				}
+
+				.price {
+					font-size: 2rem;
+					color: $black;
+
+					span {
+						margin-left: 10px;
+						color: $light-color;
+						font-size: 1.5rem;
+						text-decoration: line-through;
+					}
+				}
+			}
+		}
+	}
+
+	.cart-total {
+		padding: 2rem;
+		border-radius: 0.5rem;
+		border: $border;
+
+		h3 {
+			margin-bottom: 1rem;
+			font-size: 2rem;
+			color: $black;
+
+			span {
+				color: $pink;
+			}
+		}
+
+	}
+}
+
+// CART section - ENDS
+
+
 // Footer - STARTS
 
 .footer {
@@ -795,5 +894,9 @@ section {
 
 	.home .slide .content h3 {
 		font-size: 4rem;
+	}
+
+	.shopping-cart .box-container .box {
+		flex-flow: column;
 	}
 }
